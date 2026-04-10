@@ -1,0 +1,401 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Jayakar Library - SPPU</title>
+
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, #a6ffcb, #12d8fa);
+            color: #003366;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            width: 90px;
+            height: auto;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            border-radius: 50%;
+        }
+
+        nav {
+            background: linear-gradient(90deg, #12d8fa, #06beb6);
+            text-align: center;
+            padding: 25px 0;
+        }
+
+        nav a {
+            color: white;
+            float: left;
+            display: block;
+            text-align: center;
+            padding: 14px, 20px;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 17px;
+
+        }
+
+        nav a:hover {
+            color: #003333;
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #fff;
+            margin: 20px auto;
+            width: 85%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #003366;
+            margin-bottom: 15px;
+        }
+        
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.about-text {
+    width: 55%;
+    text-align: left;
+     color: #003366;
+}
+
+
+.about-img {
+    width: 40%;
+}
+
+.about-img img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+        .book-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .book-item {
+            width: 200px;
+            background-color: #e0f7fa;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .book-item img {
+            width: 100%;
+            height: 250px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .book-item p {
+            margin-top: 10px;
+            font-weight: 500;
+            color: #003366;
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 60%;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #12d8fa;
+            color: white;
+        }
+
+        td {
+            background-color: #e8f9ff;
+        }
+        /* STAFF SECTION DESIGN */
+.staff-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.staff-card {
+    width: 250px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    
+    border-top: 5px solid #12d8fa;
+}
+
+.staff-card:hover {
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.staff-card h3 {
+    color: #003366;
+    margin-bottom: 5px;
+}
+
+.staff-card p {
+    font-weight: bold;
+    color: #006677;
+}
+button {
+    background: linear-gradient(90deg, #12d8fa, #06beb6);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+button:hover {
+    background: linear-gradient(90deg, #06beb6, #12d8fa);
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="sppu.jpg" class="logo">
+        <h1>Jayakar Library</h1>
+        <p>Savitribai Phule Pune University</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#staff">Staff</a>
+        <a href="#books">Book Collection</a>
+        <a href="#timings">Timings</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+        <section id="about">
+    <div class="about-container">
+
+        <div class="about-text">
+            <h2>About Jayakar Library</h2>
+            <p>
+                The Jayakar Library at Savitribai Phule Pune University is a premier academic library 
+                with a rich collection of books, journals, theses, and e-resources. It serves as a vital 
+                hub for students, teachers, and researchers across disciplines. The library is known 
+                for its advanced digital facilities, reading rooms, research support, and vast archives 
+                of academic resources.
+            </p>
+        </div>
+
+        <div class="about-img">
+            <img src="jaykarlibrary.jpg" alt="Library Image">
+        </div>
+
+    </div>
+    </section>
+        <section id="books">
+            <h2>Book Collection</h2>
+            <div class="book-gallery">
+
+                <a href="science.html">
+                    <div class="book-item">
+                        <img src="science.jpg" alt="Book 1">
+                        <p>Science & Technology</p>
+                    </div>
+                </a>
+
+                <a href="arts.html">
+                    <div class="book-item">
+                        <img src="art.jpg" alt="Book 2">
+                        <p>Arts & Humanities</p>
+                    </div>
+                </a>
+
+                <a href="commerce.html">
+                    <div class="book-item">
+                        <img src="comm.jpg" alt="Book 3">
+                        <p>Commerce & Economics</p>
+                    </div>
+                </a>
+                <a href="research.html">
+            <div class="book-item">
+                <img src="reseach.jpg" alt="Research">
+                <p>Research</p>
+            </div>
+	              </a>
+                <a href="literature.html">
+            <div class="book-item">
+                <img src="lit.jpg" alt="Literature">
+                <p>Literature</p>
+            </div>
+                </a>
+                <a href="novel.html">
+                <div class="book-item">
+                    <img src="novel.jpg" alt="Novels">
+                    <p> Novels</p>
+                </div>
+
+            </a>
+            <a href="history.html">
+                <div class="book-item">
+                    <img src="history.jpg" alt="History">
+                    <p> History</p>
+                </div>
+
+            </a>
+             
+            </a>
+            <a href="business.html">
+                <div class="book-item">
+                    <img src="business.jpg" alt="bm">
+                    <p> Business Management</p>
+                </div>
+
+            </a>
+             <a href="law.html">
+                <div class="book-item">
+                    <img src="law.jpg" alt="bm">
+                    <p> Law</p>
+                </div>
+
+            </a>
+             <a href="Journlism.html">
+                <div class="book-item">
+                    <img src="journ.jpg" alt="Journlism">
+                    <p> Journalism</p>
+                </div>
+
+            </a>
+        
+                <section id="facilities">
+                    <h2>Facilities</h2>
+
+                    <ul type="circle">
+                        <li>Extensive Collection of Books and Journals</li>
+                        <li>Digital Library and Online Databases</li>
+                        <li>Research Assistance and Guidance</li>
+                        <li>Reading Rooms and Study Cabins</li>
+                        <li>Wi-Fi, Printing & Photocopy Services</li>
+                    </ul>
+                </section>
+                <section id="timings">
+                    <h2>Library Timings</h2>
+                    <table>
+                        <tr>
+                            <th>Day</th>
+                            <th>Opening Hours</th>
+                        </tr>
+                        <tr>
+                            <td>Monday - Friday</td>
+                            <td>8:00 AM - 10:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>8:00 AM - 8:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>First & Third Saturday, Sunday & Holidays</td>
+                            <td>Closed</td>
+                        </tr>
+                    </table>
+                </section>
+
+               
+            <section style="text-align:center;">
+    <p>To Register for Library, Please fill the form by clicking on the button</p>
+
+    <a href="registrationform.html">
+        <button>Click here</button>
+    </a>
+</section>
+<section id="staff">
+    <h2>Our Library Staff</h2>
+    <div class="staff-container">
+
+        <div class="staff-card">
+            <h3>Dr. Desale Sanjay Kautikrao</h3>
+            <p>I/C Director</p>
+        </div>
+
+        <div class="staff-card">
+            <h3>Dr. Londhe Nagesh Laxman</h3>
+            <p>Assistant Librarian</p>
+        </div>
+
+        <div class="staff-card">
+            <h3>Dr. Wadekar Priyanka P.</h3>
+            <p>Assistant Librarian</p>
+        </div>
+
+        <div class="staff-card">
+            <h3>Mr. Valvi Krishna Gumba</h3>
+            <p>Technical Assistant</p>
+        </div>
+
+        <div class="staff-card">
+            <h3>Mr. Navale Ramdas Kashinath</h3>
+            <p>Technical Assistant</p>
+        </div>
+
+        <div class="staff-card">
+            <h3>Mr. Takale Kundlik Dada</h3>
+            <p>Library Attendant</p>
+        </div>
+
+        <div class="staff-card">
+            <h3>Mr. Bhilavekar Dilip Chotelal</h3>
+            <p>Library Attendant</p>
+        </div>
+
+    </div>
+</section>
+                <section id="contact">
+                    <h2>Contact Us</h2>
+                    <p>Email: <u>jaykarlibrary@unipune.ac.in</p></u>
+                    <p>Landline No.: <u>020-2560-1425</p></u>
+                    <p>Address: Savitribai Phule Pune University, Pune, Maharashtra</p>
+                </section>
+</body>
+
+</html>
