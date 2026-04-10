@@ -1,0 +1,176 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    echo "<script>
+            alert('Registration submitted');
+            window.location.href='index.html';
+          </script>";
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>STUDENT REGISTRATION FORM</title>
+
+    <style>
+        body {
+            background-color: yellow;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 6pt;
+            color: blue;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .form-box {
+            width: 600px;
+            background-color: #efecebe9;
+            padding: 20px;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 6px;
+        }
+
+        input, select, textarea {
+            width: 95%;
+            padding: 5px;
+            border: 1px solid gray;
+            border-radius: 4px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+        }
+
+        .small-input {
+            width: 28%;
+            display: inline-block;
+        }
+
+        .register-btn {
+            width: 100px;
+            padding: 8px;
+            background-color: #aaa;
+            border: none;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>STUDENT REGISTRATION FORM</h1>
+
+<div class="form-box">
+<form method="post">
+
+<table>
+<tr>
+    <td>Roll no.:</td>
+    <td><input type="text" name="roll"></td>
+</tr>
+
+<tr>
+    <td>Student name:</td>
+    <td>
+        <input type="text" name="fname" class="small-input"> -
+        <input type="text" name="lname" class="small-input">
+    </td>
+</tr>
+
+<tr>
+    <td>Date of birth:</td>
+    <td>
+        <input type="text" name="day" class="small-input"> -
+        <input type="text" name="month" class="small-input"> -
+        <input type="text" name="year" class="small-input">
+        (DD-MM-YYYY)
+    </td>
+</tr>
+
+<tr>
+    <td>Mobile no.:</td>
+    <td>+91 <input type="text" name="mobile" style="width:85%;"></td>
+</tr>
+
+<tr>
+    <td>Email id:</td>
+    <td><input type="email" name="email"></td>
+</tr>
+
+<tr>
+    <td>Password:</td>
+    <td><input type="password" name="password"></td>
+</tr>
+
+<tr>
+    <td>Gender:</td>
+    <td>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+    </td>
+</tr>
+
+<tr>
+    <td>Department:</td>
+    <td>
+        <input type="checkbox" name="dept[]" value="CSE"> CSE
+        <input type="checkbox" name="dept[]" value="IT"> IT
+        <input type="checkbox" name="dept[]" value="ECE"> ECE
+        <input type="checkbox" name="dept[]" value="Civil"> Civil
+        <input type="checkbox" name="dept[]" value="Mech"> Mech
+    </td>
+</tr>
+
+<tr>
+    <td>Course:</td>
+    <td>
+        <select name="course">
+            <option>Select Current Course</option>
+            <option>BCA</option>
+            <option>BBA</option>
+            <option>BTech</option>
+            <option>BSc</option>
+            <option>BA</option>
+        </select>
+    </td>
+</tr>
+
+<tr>
+    <td>Student photo:</td>
+    <td><input type="file" name="photo"></td>
+</tr>
+
+<tr>
+    <td>City:</td>
+    <td><input type="text" name="city"></td>
+</tr>
+
+<tr>
+    <td>Address:</td>
+    <td><textarea rows="3" name="address"></textarea></td>
+</tr>
+</table>
+
+<center>
+    <button class="register-btn" type="submit">Register</button>
+</center>
+
+</form>
+</div>
+
+</body>
+</html>
+        
